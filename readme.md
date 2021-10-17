@@ -10,6 +10,6 @@ Instructor: Alan Badillo Salas (dragonnomada@gmail.com)
 
 ## Grupo de Whatsapp
 
-![Whatsapp](./assets/whatsapp.png)
+![Whatsapp](./assets/whatsapp.jpeg)
 
 [https://chat.whatsapp.com/EgIDb7q17SsGygf7cQur5I](https://chat.whatsapp.com/EgIDb7q17SsGygf7cQur5I)
