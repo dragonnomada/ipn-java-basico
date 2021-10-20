@@ -52,6 +52,10 @@ PARA i <- 1 HASTA N:
     IMPRIME SIN SALTO lista.posicion(i), " "
 ```
 
+> RESULTADO:
+
+![PSeInt](../assets/s1_ex_3.png)
+
 ### 4. Revisa el curso de PLEDIN 3.0 - Introducción al Pseudocódigo
 
 ![PSeInt](../assets/s1_ex_4.png)
