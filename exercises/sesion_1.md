@@ -28,7 +28,29 @@ Ejecuta el programa con `F9` o en la barra de menú en `Ejecutar`.
 
 ### 3. Implementa el algoritmo de ordenamiento en burbuja
 
-![PSeInt](../assets/s1_ex_3.png)
+```txt
+lista <- 4, 3, 5, 2, 1, 6
+
+N <- lista.tamaño
+
+PARA i <- 1 HASTA N:
+    a <- 0
+    inicial <- lista.posicion(a)
+
+    PARA j <- i + 1 HASTA N:
+        capturado <- lista.posicion(a + 1)
+        SI inicial > capturado:
+            lista.ajusta(a, capturado)
+            lista.ajusta(a + 1, inicial)
+            a <- a + 1
+            capturado <- NADA
+        SINO:
+            a <- a + 1
+            inicial <- lista.posicion(j)
+
+PARA i <- 1 HASTA N:
+    IMPRIME SIN SALTO lista.posicion(i), " "
+```
 
 ### 4. Revisa el curso de PLEDIN 3.0 - Introducción al Pseudocódigo
 
