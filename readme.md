@@ -10,7 +10,8 @@ Instructor: Alan Badillo Salas (dragonnomada@gmail.com)
 
 ## Presentaciones
 
-1. [Introducción](https://slides.com/d/AgfBF6A/live)
+1. [Introducción](https://slides.com/dragonnomada123/ip-javab-introduccion/fullscreen)
+2. [Sintaxis del Lenguaje](https://slides.com/dragonnomada123/java-basico-sintaxis/fullscreen)
 
 ## Grupo de Whatsapp
 
