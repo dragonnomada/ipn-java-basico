@@ -25,6 +25,12 @@ public class Tienda {
         
         p2.describir(); // Ejecutar las acciones/funcionalidades del objeto
         
+        Persona p = new Persona();
+        
+        p.capturaPersona();
+        
+        p.describir();
+        
     }
     
 }
