@@ -1,11 +1,23 @@
-package ipn.cic.sesion4;
+package ipn.cic.jbs5app3jarras;
 
-import java.util.Scanner;
-
+// MODELO LÓGICO (*M*VC)
 public class Jarra {
 
     private int capacidadMaxima;
     private int capacidadOcupada;
+    
+    public Jarra(int litrosMaximos, int mililitrosOcupados) {
+        this.capacidadMaxima = litrosMaximos;
+        this.capacidadOcupada = mililitrosOcupados;
+    }
+    
+    public int getCapacidadMaxima() {
+        return this.capacidadMaxima * 1000;
+    }
+    
+    public int getCapacidadActual() {
+        return this.capacidadOcupada;
+    }
 
     public int vertir(Jarra otra, int porcentaje) {
         //1.obtener la cantidad a vertir
@@ -51,27 +63,9 @@ public class Jarra {
             this.capacidadOcupada = this.capacidadMaxima * 1000;
         }
     }
-
-    public void describir() {
-        System.out.println("+----------------------+");
-        System.out.printf("| %4d ml / %2d L (%02d%%) |\n",
-                this.capacidadOcupada,
-                this.capacidadMaxima,
-                this.calcularPorcentajeOcupado()
-        );
-        System.out.println("+----------------------+");
-    }
-
-    public void capturar(Scanner scanner) {
-        System.out.println("datos de la jarra: ");
-        System.out.println("capacidad Máxima: (Litros) ");
-        this.capacidadMaxima = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("capacidad ocupada: (ml) ");
-        this.capacidadOcupada = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Jarra capturada");
-        this.describir();
+    
+    public String getDisplay() {
+        return String.format("%6d ml / %-2d L", this.capacidadOcupada, this.capacidadMaxima);
     }
     
 }
