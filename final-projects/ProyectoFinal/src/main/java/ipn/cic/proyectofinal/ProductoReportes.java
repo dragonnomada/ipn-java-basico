@@ -13,11 +13,13 @@ public class ProductoReportes {
         this.filtro = new ProductoFiltros(productos);
     }
     
+    // PROYECTO FINAL: COMPLETA ESTA FUNCIÓN
     public double getMinimoPrecio() {
         // TODO: Calcular el mínimo precio de todos los productos
         return 20;
     }
     
+    // PROYECTO FINAL: COMPLETA ESTA FUNCIÓN
     public double getMaximoPrecio() {
         // TODO: Calcular el máximo precio de todos los productos
         return 1000;

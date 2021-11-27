@@ -19,6 +19,8 @@ public class ProductoFiltros {
         return null;
     }
     
+    
+    // PROYECTO FINAL: COMPLETA ESTA FUNCIÓN
     public ArrayList<Producto> getProductosInPrecio(double precioMin, double precioMax) {
         ArrayList<Producto> productosFiltrados = new ArrayList<>();
         
