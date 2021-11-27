@@ -11,7 +11,9 @@ public class ImpresoraTicket {
     }
     
     public boolean imprimir(Maquina maquina, Ticket ticket) {
-        
+        // TODO: Mandar a imprimir el ticket en una impresora real
+        System.out.println(ticket);
+        return true;
     }
     
 }
