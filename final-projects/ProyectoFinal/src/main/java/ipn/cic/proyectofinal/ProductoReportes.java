@@ -15,14 +15,30 @@ public class ProductoReportes {
     
     // PROYECTO FINAL: COMPLETA ESTA FUNCIÓN
     public double getMinimoPrecio() {
+        double min = productos.get(0).precio;
+        
         // TODO: Calcular el mínimo precio de todos los productos
-        return 20;
+        for (Producto producto : this.productos) {
+            if (producto.precio < min) {
+                min = producto.precio;
+            }
+        }
+        
+        return min;
     }
     
     // PROYECTO FINAL: COMPLETA ESTA FUNCIÓN
     public double getMaximoPrecio() {
+        double max = productos.get(0).precio;
+        
         // TODO: Calcular el máximo precio de todos los productos
-        return 1000;
+        for (Producto producto : this.productos) {
+            if (producto.precio > max) {
+                max = producto.precio;
+            }
+        }
+        
+        return max;
     }
     
     public void generarReportePrecios() {

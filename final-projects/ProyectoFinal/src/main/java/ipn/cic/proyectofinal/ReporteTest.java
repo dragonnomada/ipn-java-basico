@@ -14,6 +14,7 @@ public class ReporteTest {
         productos.add(new Producto(45.88));
         productos.add(new Producto(215.93));
         productos.add(new Producto(470.56));
+        productos.add(new Producto(950.67));
         productos.add(new Producto(230.88));
         productos.add(new Producto(75.16));
         productos.add(new Producto(99.99));

@@ -27,6 +27,11 @@ public class ProductoFiltros {
         // Recorrer cada producto de los productos
         // Determinar si el producto está en el rango de precios
         // Agregar el producto a los productos filtrados
+        for (Producto producto : this.productos) {
+            if (producto.precio >= precioMin && producto.precio <= precioMax) {
+                productosFiltrados.add(producto);
+            }
+        }
         
         return productosFiltrados;
     }
