@@ -1,0 +1,43 @@
+Producto:
+- código #String
+- precio #double
+
+QR:
+- cadena #String
+- tipo #QRTipo
+>>
++ fromProductoPago(Maquina maquina, Producto producto) #String
++ showQR(Maquina maquina) #boolean
+
+DisplayPago:
+- estado #EstadoPago
+- ticket #Ticket
+>>
++ generandoPago(Maquina maquina) #void
++ esperandoPago(Maquina maquina) #void
++ recibirPago(Maquina maquina, Ticket ticket)
+
+ImpresoraTicket:
+- tickets #ArrayList<Ticket>
+>>
++ imprimir(Maquina maquina, Ticket ticket) #boolean
+
+Maquina:
+- id #String
+- productos #ArrayList<Productos>
+- qr #QR
+- displayPago #DisplayPago
+- impresoraTicket #ImpresoraTicket
+>>
++ seleccionarProducto(String codigo) #Producto
++ mostrarProducto(Producto producto) #boolean
++ generarPago(Producto producto) #boolean
++ despacharProducto(Ticket ticket) #boolean
++ imprimir(Ticket ticket) #boolean
+
+Ticket:
+- idMaquina #String
+- codigoProducto #String
+- precioProducto #String
+- cadenaPago #String
+- fechaPago #String
